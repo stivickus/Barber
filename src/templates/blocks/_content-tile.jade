@@ -1,0 +1,10 @@
+mixin b_content-tile(title, text, btnLabel, btnUrl)
+	+b.content-tile
+		if title
+			+e.title!= title
+		if text
+			+e.text!= text
+		if btnLabel
+			+e("a").more.btn.btn-bordered(href=btnUrl)= btnLabel
+
+

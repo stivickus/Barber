@@ -1,0 +1,11 @@
+mixin b_preloader(preloaderText, preloaderImg)
+	+b.preloader(style="background-image: url('#{preloaderImg}')")
+		.container
+			+e.wrap
+				+e.inner
+					+e.dot
+					+e.dot
+					+e.dot
+				+e.info
+					+e.headphones
+					p!= preloaderText

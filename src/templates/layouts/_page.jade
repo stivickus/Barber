@@ -1,0 +1,10 @@
+extends _layout
+
+block main
+	- classes = []
+	if pageMod
+		- classes.push(pageMod)
+	.page.container(class=classes)
+		block content
+	.bottom-overlay
+	+b_page-menu(activeMenuState)

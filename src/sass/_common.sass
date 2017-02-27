@@ -1,0 +1,41 @@
+html
+	margin: 0
+	padding: 0
+	height: 100%
+
+body
+	margin: 0
+	padding: 0
+	height: 100%
+	position: relative
+	font-family: 'Museo Sans', sans-serif
+	font-size: 16px
+	line-height: 1.5
+	color: #000
+	background: url('/img/bg.jpg') no-repeat center center #052936
+	-webkit-tap-highlight-color: transparent
+
+.sr-only
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	padding: 0
+	overflow: hidden
+	clip: rect(0, 0, 0, 0)
+	border: 0
+
+
+::selection, ::-moz-selection
+	background-color: rgba(0, 0, 0, 0.2)
+	color: #fff
+
+*
+	-webkit-font-smoothing: antialiased
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
