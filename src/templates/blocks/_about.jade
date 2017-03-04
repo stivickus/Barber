@@ -1,0 +1,11 @@
+mixin b_about(description)
+    +b('div').about
+        +e('h2').title About us
+        +e('div').content
+            +e('div').description
+                - each section in description
+                    if section.title
+                        +e('h3').subtitle= section.title
+                    p= section.paragraph
+            +e('div').picture
+                +e('img')(src="img/about.jpg")
