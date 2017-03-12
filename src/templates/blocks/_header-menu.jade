@@ -1,0 +1,17 @@
+mixin b_header()
+	+b("header").header.container
+
+		+b.col-xs-6
+			+b_logo()
+
+		+b.col-xs-6
+			+b_header_menu()
+			+e("ul").menu
+				+e("li").menu-item
+					+e("a").menu-link(href="/").active About Us
+				+e("li").menu-item
+					+e("a").menu-link(href="/") Gallery
+				+e("li").menu-item
+					+e("a").menu-link(href="/") Services
+				+e("li").menu-item
+					+e("a").menu-link(href="/") Contacts

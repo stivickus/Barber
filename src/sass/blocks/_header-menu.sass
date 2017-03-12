@@ -1,0 +1,26 @@
+$height: 59px
+
+.header_container
+	height: $height
+	width: 100%
+	position: relative
+	background-color: #000000
+
+.header
+	height: 100%
+	color: $color1
+
+	& *
+		color: inherit
+
+	&__menu
+		display: inline-block
+
+	&__menu-item
+		display: inline-block
+		line-height: $height
+		font-size: $mainFontSize
+		font-family: $mainFontFamily
+
+	&__menu-link.active
+		color: $navActiveLinkColor
