@@ -1,9 +1,8 @@
 mixin b_header()
-	+b("header").header
-		+e("a").logo._great(href="")
-			img(src="img/great-logo.svg" alt="")
-		+e("a").logo._lab(href="https://www.kaspersky.com/" target="_blank")
-			img(src="img/lab-logo.svg" alt="")
-		+e("ul").menu
-			+e("li").menu-item
-				+e("a").menu-link(href="/") Access Intelligence
+	+b("header").header.container
+
+		+b.col-xs-6
+			+b_logo()
+
+		+b.col-xs-6.text-right
+			+b_header_menu()

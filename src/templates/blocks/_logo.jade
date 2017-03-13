@@ -1,15 +1,6 @@
-mixin b_header()
-	+b("header").header.container
-
-		+e("a").col-sm-6.logo._great(href="") Barber Batmen
-			img(src="img/scissor-and-comb.png" alt="")
-
-		+e("ul").menu.col-sm-6
-			+e("li").menu-item
-				+e("a").menu-link(href="/").active About Us
-			+e("li").menu-item
-				+e("a").menu-link(href="/") Gallery
-			+e("li").menu-item
-				+e("a").menu-link(href="/") Services
-			+e("li").menu-item
-				+e("a").menu-link(href="/") Contacts
+mixin b_logo()
+	+b.logo-container
+		+b.logo
+			+e.pretext Barber
+			+e.img(src='img/scissor-and-comb.png')
+			+e.posttext Batman
