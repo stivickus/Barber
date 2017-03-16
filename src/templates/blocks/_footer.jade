@@ -1,0 +1,10 @@
+mixin b_footer()
+	+b("footer").footer.container
+
+		+b.col-xs-12
+			+b.footer_upper
+				+b_logo
+
+		+b.col-xs-12
+			+b.footer-bottom.text-center
+				+b_menu('footer', [{'label': 'About Us', 'value': 'about-us'}, {'label': 'Gallery', 'value': 'gallery'}, {'label': 'Services', 'value': 'services'}, {'label': 'Contacts', 'value': 'contacts'}])

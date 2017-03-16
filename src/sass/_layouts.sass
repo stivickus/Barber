@@ -28,6 +28,18 @@
 .text-right
 	text-align: right
 
+.text-center
+	text-align: center
+
+.clearfix
+
+	&:before
+		content: ""
+		display: table
+	&:after
+		content: ""
+		display: table
+		clear: both
 
 @media (min-width: 1600px)
 	.container
