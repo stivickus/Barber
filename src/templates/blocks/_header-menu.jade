@@ -1,11 +1,6 @@
-mixin b_header_menu()
-	+b.menu-container
-		+b("ul").menu.text-right
-			+e("li").menu-item
-				+e("a").menu-link(href="/").active About Us
-			+e("li").menu-item
-				+e("a").menu-link(href="/") Gallery
-			+e("li").menu-item
-				+e("a").menu-link(href="/") Services
-			+e("li").menu-item
-				+e("a").menu-link(href="/") Contacts
+mixin b_header-menu(menuItems)
+	+b.header-menu
+		+e("ul").list.text-right
+			each item in menuItems
+				+e("li").item
+					+e("a").link(href="/")= item.label
