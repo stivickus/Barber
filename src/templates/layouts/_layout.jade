@@ -11,11 +11,16 @@ html
 		.preloader(style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: white; z-index: 66666666;")
 			.preloader__text(style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 100%; background-color: blue; width: 20px; height: 20px; transition: .2s width, .2s height; display: flex; align-items: center; justify-content: center;")
 				.preloader__value 0%
-			
-		.header_container
+
+		.header_container.section
 			+b_header
-		main.main
-			block main
+
+		.main_container.section
+			main.main
+				block main
+
+		.footer-container.section
+			+b_footer
 
 		block scripts
 			script(src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")

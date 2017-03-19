@@ -1,4 +1,4 @@
-mixin post(classes, image='http://lorempixel.com/500/800/')
+mixin post(classes, image)
 	+b("section").post(class=classes)
 		+e("ul").list
 			+e("li").item_left
@@ -8,5 +8,5 @@ mixin post(classes, image='http://lorempixel.com/500/800/')
 			+e("li").item_right
 				+e("h2").caption_right REAL MAN GO TO REAL <br> BARBERS
 				//- 'img/mens.jpg'
-				+e("img").image(data-original=image alt="man" src='http://lorempixel.com/10/10/')
-					
+				+e("img").image(data-original=image alt="man" src='/img/mens.png')
+

@@ -1,0 +1,20 @@
+mixin b_footer()
+	+b("footer").footer
+
+		+b.footer-upper-container.container.extra-padding
+			+b.col-xs-6
+				+b.footer-upper
+					+b_logo
+
+			+b.col-xs-6
+				+b.footer-upper
+					+b_socials
+
+		+b.footer-bottom-container.section.extra-padding
+			+b.col-xs-12
+				+b.footer-bottom.text-center.container
+					+b_menu('footer', [{'label': 'About Us', 'value': 'about-us'}, {'label': 'Gallery', 'value': 'gallery'}, {'label': 'Services', 'value': 'services'}, {'label': 'Contacts', 'value': 'contacts'}])
+
+		+b.footer-copyrights-container.container.extra-padding
+			+b.col-xs-12
+				+b_copyrights
