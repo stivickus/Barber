@@ -8,13 +8,14 @@ html
 		include ../partials/_meta
 
 	body
-		.header_container
+		.header_container.section
 			+b_header
 
-		main.main
-			block main
+		.main_container.section
+			main.main
+				block main
 
-		.footer_container
+		.footer_container.section
 			+b_footer
 
 		block scripts

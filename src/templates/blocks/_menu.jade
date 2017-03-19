@@ -1,6 +1,6 @@
 mixin b_menu(prefix, menuItems)
-	+b.menu(class=prefix)
-		+e("ul").list.text-right
+	+b.menu(class='menu-' + prefix)
+		+e("ul").list
 			each item in menuItems
-				+e("li").item
+				+e("li").item(class='menu-' + prefix + '__item')
 					+e("a").link(href="#")= item.label

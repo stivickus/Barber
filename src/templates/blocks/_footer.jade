@@ -1,10 +1,16 @@
 mixin b_footer()
-	+b("footer").footer.container
+	+b("footer").footer
 
-		+b.col-xs-12
-			+b.footer_upper
-				+b_logo
+		+b.footer-upper-container.container
+			+b.col-xs-6
+				+b.footer-upper
+					+b_logo
 
-		+b.col-xs-12
-			+b.footer-bottom.text-center
-				+b_menu('footer', [{'label': 'About Us', 'value': 'about-us'}, {'label': 'Gallery', 'value': 'gallery'}, {'label': 'Services', 'value': 'services'}, {'label': 'Contacts', 'value': 'contacts'}])
+			+b.col-xs-6
+				+b.footer-upper
+					+b_socials
+
+		+b.footer-bottom-container
+			+b.col-xs-12
+				+b.footer-bottom.text-center.container
+					+b_menu('footer', [{'label': 'About Us', 'value': 'about-us'}, {'label': 'Gallery', 'value': 'gallery'}, {'label': 'Services', 'value': 'services'}, {'label': 'Contacts', 'value': 'contacts'}])
