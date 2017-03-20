@@ -1,0 +1,10 @@
+mixin b_post-one-column(classes, primaryText, secondaryText, image)
+	+b("section").post-one-column.post(class=classes)
+		+e("img").image(data-original=image alt="img" src='http://lorempixel.com/10/10/')
+
+		+e.caption
+			+e("h2").primary= primaryText
+
+			+e("p").secondary= secondaryText
+
+
